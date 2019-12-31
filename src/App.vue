@@ -1,10 +1,11 @@
 <template>
   <div id="app">
+    <NarBar />
     <div id="DivPrincipal" class="container">
       <div class="col">
         <div id="navbar" class="row-md-1">
         <!--<NarBar />-->
-        <NarBar />
+        
       </div>
       <div id="content" class="row-md-1">
         <!---->
@@ -106,32 +107,27 @@ body {
 
 <style>
 html {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
+  position: relative;
+  min-height: 100%;
 }
 body {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
+  margin-bottom: 181px;
 }
 #app {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   /*display: flex;*/
-  flex-shrink: 1;
-  align-content: center;
-  align-items: center;
-  text-align: center;
+  /* flex-shrink: 1; */
+  /* align-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
 }
 #DivPrincipal {
-  width: 100%;
+  /* width: 100%;
   height: auto;
   align-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; */
 }
 #navbar {
   /*margin-top: 180px;*/
@@ -139,11 +135,11 @@ body {
 #content {
   margin-top: 76px;
   width: 100%;
-  margin-bottom: 181px;
+  /* margin-bottom: 181px; */
 }
 #footerPage {
   height: 181px;
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0px;
   left: 0px;
